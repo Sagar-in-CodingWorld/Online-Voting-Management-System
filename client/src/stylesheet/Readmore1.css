@@ -1,0 +1,131 @@
+.opor{
+    height: 70px;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: rgba(240, 4, 4, 0.3) 0px 0px 0px 3px;
+}
+.sorir{
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    background-color: hsl(204, 45%, 98%);  
+    box-shadow: rgba(240, 4, 4, 0.3) 0px 0px 0px 3px;
+    background-image: url('https://cdn.wallpapersafari.com/87/95/I5RTmP.jpg');
+}
+.sorir1{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top: 50px;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZ4vc0XHiuw8rkyKdiZp2SPjsXdDcljrfoA&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; */
+    background-image: linear-gradient(orange,white,green);
+}
+.sorir1 img{
+    
+    padding-left: 20px;
+    padding-top: 20px;
+    
+}
+/* .sorir1 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+} */
+.sorir li{
+    display: inline-block;
+    padding-left: 10px;
+    color: rgb(13, 39, 75);
+}
+.sorir li h4{
+    padding-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.sorir1 p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    
+}
+@media screen and (max-width:590px) {
+    .sorir1{
+        margin-top: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+}
+.sorir1 img{
+    width: 230px;
+    padding-left: 0%;
+}
+.opor img{
+    width: 95%;
+    padding-left: 0%;
+}
+.sorir i{
+    font-size: 12px;
+    padding-top: 8px;
+    display: none;
+}
+.sorir li h4{
+    font-size: 22px;
+    padding-top: 0%;
+}
+}
+.arow a{
+    
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    margin:0px;
+    padding:0px;
+    background-color:rgb(31, 31, 97);
+    text-align: center;
+  }
+  .imp{
+    color: bisque;
+  }
+  .link nav ul li{
+    display: inline-block;
+  }
+  .link nav ul li .nav{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .link nav ul li .nav:hover{
+    color: aliceblue;
+    text-decoration: block;
+  }
+  
+  
+  .contact{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: bisque;
+    float: left;
+  }
+  .other{
+    color: azure;
+    text-align: left;
+   padding-left: 50px;
+    float: left;
+    font-size: 20px;
+  }
+  
+  
+  

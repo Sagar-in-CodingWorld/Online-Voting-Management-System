@@ -1,0 +1,95 @@
+.box{
+    height:auto;
+     border-radius: 20px;
+     background-color: whitesmoke;
+     /* background-color: rgba(255, 255, 255, 0.977); */
+    /* padding-top: 50px; */
+}
+.box h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.h-com{
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow:  */
+}
+.card{
+    /* height:550px; */
+    /* float: left; */
+    border-radius:28px 28px  20px;
+    text-align: justify; 
+    font-size: 15px;
+    font-weight: 200px;
+    background-color:#C6EBC5;
+    padding: 10px; 
+    display:inine-block;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin:10px 10px 10px 10px ;  */
+    
+}
+.image img{
+    border-radius: 50%;
+    height: 100px;
+    text-align: center;
+ 
+}
+.card .image{
+    margin:-5px;
+    text-align: center;
+   
+}
+.card .image .c-name{
+    font-size: 160%;
+    font-weight: bold;
+}
+.c-name p{
+    font-size: 150%;
+}
+.card .indentt{
+    font-size: 0.88rem; 
+    text-indent: 10%;
+}
+div.card .read{
+    color:blue;
+    text-decoration: none;
+}
+@media only screen and (max-width:790px) and (min-width:580px){
+    div.image{
+        margin:0px -20px;
+        text-align: center;
+       
+    }
+}
+
+
+
+
+
+
+
+/* .div1{
+    height:100vh;
+    margin-left: 10%;
+    padding: 0;
+    width:80%;
+    height: 700px;
+    background-color: #f1d9b6;
+  } */
+/* .div2{ */
+    /* height: 600px; */
+    /* width: 30%; */
+    /* margin-left:30px;
+    margin-top: 40px;
+    border-radius: 30px;
+    background-color: rgb(176, 142, 231);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    float: left; */
+/* } */
+
+/* .div1 h3{
+    color: blue;    
+    text-align: center;
+
+
+} */

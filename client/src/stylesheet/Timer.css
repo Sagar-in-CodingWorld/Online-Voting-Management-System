@@ -1,0 +1,16 @@
+.clock{
+    font-family: LCD !important;
+    /* background-color: white; */
+    text-align: center;
+    /* transform: translateX(-50%) translateY(-10%);   */
+    color: #ffffffbb;  
+    /* font-size: px;   */
+    letter-spacing: 5px; 
+}
+@media(max-width: 576px){
+    .clock{
+        font-size: 8px;  
+        letter-spacing: 1px; 
+
+    }
+}

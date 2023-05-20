@@ -1,0 +1,63 @@
+/* .App{
+  background-color: #2dd687;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* background-color: #2dd687; */
+/* #preloader{ */
+  /* background: rgba(0, 0, 0, 0.725) url(../public/img/loader_4.gif) no-repeat center;
+  background-size: 7%;
+  height : 100vh;
+  width: 100%;
+  position: fixed; */
+  /* z-index: 100; */
+/* } */
+
+#preloader {
+  position: absolute;
+  z-index: 999999;
+  height:100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.725);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#loading {
+  color: #050202;
+  font-family: monospace;
+  /* background-color: ; */
+}
+#ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: absolute;
+  /* border: 2px solid; */
+  display: inline-block;
+  border-top: 3px solid #a9051d;
+  /* border-bottom: 3px solid #880015; */
+  animation: goRound 700ms linear infinite;
+}
+
+@keyframes goRound {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+
+}
+
+
+
+
+
+/* papiyar from css  */
+
+

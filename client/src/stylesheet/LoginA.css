@@ -1,0 +1,18 @@
+.login-card-back{
+    background: rgb(200,179,207);
+background: linear-gradient(90deg, rgba(200,179,207,1) 15%, rgba(146,227,201,1) 56%, rgba(235,215,210,1) 82%);
+}
+
+.login-card{
+    /* align-items: flex-end; */
+    /* display: block; */
+    background-color: #fff;
+    /* height: 80vh; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 50px -10px;
+}
+.login-card table tr{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+}

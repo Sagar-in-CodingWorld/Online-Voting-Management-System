@@ -1,0 +1,79 @@
+.back{
+    position: fixed;
+  
+  }
+  .yoyo{
+    height: 350px;
+    width: auto;
+  }
+  .top{
+    width:100%;
+    height:100px;
+    background-color:whitesmoke;
+  }
+  
+  
+  .top li{
+    display: inline-block;
+      padding-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      float:right;
+      margin-top: 50px;  
+      margin-right:15px;
+  }
+  .para{
+    background-color: whitesmoke;
+    text-align: justify;
+    padding: 10px 50px 5px 50px;
+  }
+  .para p{
+    font-size: 20px;
+    font-style:normal;
+    color: black;
+  }
+  @media screen and (min-width: 576px) {
+    .para {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+  .menu{
+    margin:0px;
+    padding:0px;
+    background-color:rgb(36, 36, 92);
+    text-align: center;
+  }
+  .imp{
+    color: bisque;
+  }
+  .link nav ul li{
+    display: inline-block;
+  }
+  .link nav ul li .nav{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .link nav ul li .nav:hover{
+    color: aliceblue;
+    text-decoration: block;
+  }
+  
+  
+  .contact{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: bisque;
+    float: left;
+  }
+  .other{
+    color: azure;
+    text-align: left;
+   padding-left: 50px;
+    float: left;
+    font-size: 20px;
+  }
+  
+  

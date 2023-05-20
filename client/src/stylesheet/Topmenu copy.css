@@ -1,0 +1,84 @@
+div.navbar-titlebar {
+    /* background-color: #41373749;*/
+    box-shadow: rgba(104, 195, 146, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background: #A7E2C6;
+    /* display: flex; */
+    /* align-items: left; */
+
+}
+#collapser{
+    
+}
+#collapsed{
+    position: absolute;
+    z-index: 9999;
+    /* width: 100%; */
+}
+
+
+/* section #collapsed{ */
+    /* display: flex; */
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* width: 100%; */
+/* } */
+.row nav {
+    display: flex;
+    justify-content: space-around; 
+
+}
+
+.navbar nav span { 
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.navbar nav ul {
+    list-style: none;
+
+}
+
+.navbar nav ul li {
+    font-size: 14px;
+}
+
+.navbar nav ul li .menu-nav {
+    color: rgb(12, 239, 209);
+    text-decoration: none;
+}
+
+.logo {
+    height: 56px;
+}
+
+.header {
+    display: inline-block;
+    /* vertical-align: -14%; */
+}
+
+.header .logo {
+    display: inline;
+}
+
+.header .btn span {
+    font-size: 10px;
+}
+
+.header .btn {
+    display: inline;
+    margin-right: 10px;
+}
+
+.fa-user+span {
+    display: block;
+}
+
+nav.navbar {
+    background-color: #a7e2c7;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.navLinkInHeader{
+    display: flex;
+    align-items: center;
+}

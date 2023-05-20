@@ -1,0 +1,105 @@
+.first{
+    
+    height: 100vh;
+    background: rgb(146,227,201);
+    background: linear-gradient(90deg, rgba(146,227,201,1) 1%, rgba(235,215,210,1) 79%);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+.child-div{
+     
+    /* height: ; */
+    margin-top: -10px;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;}
+.child-div .sing-heading{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    /* color: green; */
+}
+div.child-div div.logo-div .fa-user{
+    font-size: 3rem;
+    background: #25CF25;
+background: linear-gradient(to right, #25CF25 0%, #82CFB5 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.child-div .name {
+    margin: 10px;
+    font-size: 15px;
+}
+.child-div .input-nam{
+    font-size: 0.8rem;
+    /* width: 100%;
+    height: 25px;
+    border-radius: 7px; */
+    /* border: none; */
+    /* background-color: rgb(192, 243, 201); */
+}
+.child-div .sendotp {
+
+  display: flex;
+  height: 35px;
+  width: 100%;
+  margin-top: 15px;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  /* color: white; */
+  /* background: #ad5389; */
+  /* background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%); */
+  border: none;
+ 
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-88:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-88:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+.child-div .logo{
+    height: 80px;
+    
+}
+.child-div .logo-div{
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    
+}
+.otp{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(207, 252, 216);
+    text-align: center;
+    
+}
+@media only screen and (max-width: 390px){
+    .child-div{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

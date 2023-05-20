@@ -1,0 +1,16 @@
+
+  .card-div{
+    background-color: rgb(255, 255, 255);
+    border: solid 10px #fff;
+    font-size: 0.8rem;
+    /* color:blue; */
+  }
+  .card-div .navtext{
+    text-decoration: none;
+    /* width: 50%; */
+    color: #000;
+  }
+.card-div:hover{
+  border: solid 0px #000;
+
+}

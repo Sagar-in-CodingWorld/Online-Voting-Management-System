@@ -1,0 +1,105 @@
+.quick{
+    background-color: rgb(4, 61, 102);
+    height: auto;
+   
+}
+.quick h5{
+    color: rgb(173, 210, 71);
+}
+.quick .links{
+    float: left;
+    
+    margin-left: 10px;
+    width: 25%;
+}
+
+.quick .links1{
+    float: left;
+    padding-left: 15px;
+    width: 25%;
+}
+.quick .links2{
+    float: left;
+    padding-left: 15px;
+    width: 25%;
+}
+.quick .links2 a{
+    color: aliceblue;
+}
+.quick .links3 a{
+    color: aliceblue;
+}
+
+
+hr.new{
+    border: 1px white;
+}
+.quick .links a{
+    color: aliceblue;
+}
+.quick .links1 a{
+    color: aliceblue;
+}   
+
+@media screen and (max-width:590px) {
+    .quick .links{
+        width:100%;
+      justify-content: center;
+      text-align: center;
+    }
+    
+   .quick .links1{
+    width: 100%;
+    text-align: center;
+   }
+   .quick .links2{
+    text-align: center;
+    width: 100%;
+   }
+   .quick .links3{
+    text-align: center;
+    width: 100%;
+    
+   }
+}
+/* transform : rotate(90deg) */
+.menu{
+    margin:0px;
+    padding:0px;
+    background-color:rgb(31, 31, 97);
+    text-align: center;
+  }
+  .imp{
+    color: bisque;
+  }
+  .link nav ul li{
+    display: inline-block;
+  }
+  .link nav ul li .nav{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .link nav ul li .nav:hover{
+    color: aliceblue;
+    text-decoration: block;
+  }
+  
+  
+  .contact{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: bisque;
+    float: left;
+  }
+  .other{
+    color: azure;
+    text-align: left;
+   padding-left: 50px;
+    float: left;
+    font-size: 20px;
+  }
+  
+  
+  

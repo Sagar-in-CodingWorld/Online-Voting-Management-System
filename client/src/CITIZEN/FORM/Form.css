@@ -1,0 +1,62 @@
+  .logo{
+    height: auto;
+    padding: 0px;
+    float: left;
+  }
+  /* .header-text1{
+    margin-top: 15px;
+  } 
+  .header-text2{
+    margin-top: -30px;
+  } */
+  .form{
+    background-color: white;
+    height: auto;
+    /* margin-top: 20px; */
+     border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .state-style{
+  margin: auto;
+  margin: 10px;
+  padding: 0px;
+  display: inline-block;
+  }
+  .state-style-input1{
+    margin: 4px;
+  }
+  .state-style-input2{
+    margin: 4px;
+  }
+  .state-style-input3{
+    margin: 3px;
+  }
+  .gap1{
+    height: 30px;
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+   background-image: linear-gradient(rgb(226, 202, 158),white,rgb(201, 243, 201));
+  }
+  table.table{
+    margin:0 auto ;
+  } 
+  table.table tr{
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  table.table tr td{
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+    border: none;
+  }
+  div.form-title{
+    text-align: center;
+    font-weight: 500;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgb(225, 186, 112), white, rgb(173, 233, 173));
+  }
+  table.table tr td select{
+    width:100%;
+  }
+  

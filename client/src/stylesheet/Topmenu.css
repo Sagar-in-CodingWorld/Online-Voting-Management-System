@@ -1,0 +1,86 @@
+div.navbar-titlebar {
+    box-shadow: rgba(104, 195, 146, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background: #A7E2C6;
+    z-index: 1;
+}
+#collapsed{
+    position:absolute;
+    z-index:9999;
+    display: none; 
+    width: 100%;
+    /* background-color: #094a2cef; */
+    animation: growDown 900ms ease-in-out forwards;
+    transform-origin: top center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+
+    
+}
+@keyframes growDown { 
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.menues{
+    background-color:#a7e2c6a9;
+}
+.menues ul{
+    
+    list-style: none;
+    /* text-decoration: none; */
+}
+.menues ul span{
+    font-weight: 500;
+    text-decoration: underline;
+}
+.menues .menu-nav{
+    text-decoration:none;
+    color: #233eeb;
+}
+
+
+
+/* ***************** BrowserHeader's STYLE SHEET BELOW **********************/
+
+
+/* .logo {
+    height: 56px;
+} */
+
+.header {
+    display: inline-block;
+    background-color: whitesmoke;
+    /* position:absolute; */
+    /* z-index: 1; */
+     
+    /* vertical-align: -14%; */
+}
+
+.header .logo {
+    display: inline;
+    height: 56px;
+}
+
+.header .btn span {
+    font-size: 10px;
+}
+
+.header .btn {
+    display: inline;
+    margin-right: 10px;
+}
+
+.fa-user+span {
+    display: block;
+}
+.navLinkInHeader{
+    display: flex;
+    align-items: center;
+}

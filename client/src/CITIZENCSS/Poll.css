@@ -1,0 +1,92 @@
+body {
+    /* background-color: #801313; */
+}
+
+.poll {
+    height: 100%;
+    /* background-color: red; */
+}
+div.header-text{
+padding: 0 6rem;
+}
+p.poll-para {
+    font-family: roboto; 
+    /* color: white; */
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.mt-10 {
+    margin-top: 130px;
+}
+
+/* .px-10 {
+    padding: 0px 6rem;
+} */
+
+div.long-card {
+    height: 5rem;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+div.serials label {
+    border-radius: 50%;
+    font-size: large;
+    text-align: center;
+    height: 2rem;
+    width: 2rem;
+    /* padding: 1rem; */
+    background: #005AA7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eeaf3a, #3aee8b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eeaf3a, #3aee8b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+div.long-card div img {
+    height: 4.4rem;
+    width: 4.4rem;
+    /* background-color: red; */
+    /* border-radius: 50%; */
+}
+
+@media(max-width:470px) {
+
+    .px-10 {
+        padding: 0 8px;
+    }
+
+    .poll-para h5 {
+        font-size: 14px;
+    }
+
+    div.serials label {
+        font-size: medium;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .c-sit h5{
+         font-size: 1.1rem;   
+    }
+    .c-name h4{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media(min-width:650px) {
+    .px-10 {
+        padding: 0px 6rem;
+    }
+}
+@media(max-width:650px) {
+    div.header-text{
+        padding: 0 0.7rem;
+        }
+}
