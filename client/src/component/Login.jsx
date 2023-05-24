@@ -11,10 +11,9 @@ const Login = () => {
   const [password, setPassword] = useState();
   const [initValue, setInitValue] = useState("");
   function login() {
-    
+
+
     // console.log(user, pass);
-
-
     // if (userId === user && password === pass) {
     //   console.log("Authenticate Success");
     //   alert('Authentication Success')
@@ -25,8 +24,6 @@ const Login = () => {
     // }
 
   }
-  
-
   return (
     <div className="login-body">
       <div className="container-fluid ">

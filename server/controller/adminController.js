@@ -3,8 +3,6 @@
 import user from "../schema/adminSchema.js";
 
 
-
-
 const AddCandidate = async(req,res) =>{
     console.log(req.body);
   try{

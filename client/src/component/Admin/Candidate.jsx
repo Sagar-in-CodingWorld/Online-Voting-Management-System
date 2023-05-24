@@ -6,6 +6,7 @@ import { Sidebar } from '../Sidebar';
 import { NavLink } from 'react-router-dom';
 import { Timer } from "../Timer";
 import { Footer3 } from "../Footer3";
+import { CanceledError } from "axios";
 import { candidate } from "../../service/api";
 
 const Candidate = () => {
@@ -13,6 +14,10 @@ const Candidate = () => {
     // const [fullName, setFullName] = useState({ cdFName: "", cdLName: "" });
     const [user, setUser] = useState({});
 
+    const fileData = (e) => {
+        setUser({ ...user, cdimage: e.target.files[0] })
+        console.log(user)
+    }
     function onValueChange(e) {
 
         // console.log(fullName)    
@@ -30,19 +35,24 @@ const Candidate = () => {
     // }, [user])
 
     const addUserDetails = async (e) => {
-
         e.preventDefault();
-
-        // const cdNameIs = fullName.cdFName + " " + fullName.cdLName;
-        // setUser({cdName: cdNameIs })
-        // setUser({ ...user, cdName: cdNameIs })
-        // const cdNameIs = fullName.cdFName + " " + fullName.cdLName;
-        // setUser({...user,cdName: cdNameIs })
-        // console.log(fullName);
-        console.log(user);
-
-
-        const res = await candidate(user);
+        const formData = new FormData()
+        formData.append('cdimage', user.cdimage, user.cdimage.name)
+        formData.append('cdname', user.cdname)
+        formData.append('gender', user.gender)
+        formData.append('gname', user.gname)
+        formData.append('relation', user.relation)
+        formData.append('mobile', user.mobile)
+        formData.append('email', user.email)
+        formData.append('epicNumber', user.epicNumber)
+        formData.append('dob', user.dob)
+        formData.append('address', user.address)
+        formData.append('city', user.city)
+        formData.append('state', user.state)
+        formData.append('zip', user.zip)
+        console.log(formData);
+        const res = await candidate(formData);
+        alert("Success")
         if (res.status === 201) {
             alert("Doctor Successfully Added");
             // window.location.reload();
@@ -132,7 +142,7 @@ const Candidate = () => {
                             <div className="form-row">
                                 <div className="form-group col-sm-6">
                                     <label>Full Name</label>
-                                    <input autoFocus required type="text" name='cdName' onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input autoFocus required type="text" name='cdname' onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label >Gender</label>
@@ -145,9 +155,9 @@ const Candidate = () => {
                                 </div>
                             </div>
                             <div className="form-row">
-                            <div className="form-group col-sm-6">
+                                <div className="form-group col-sm-6">
                                     <label >Guardian Name</label>
-                                    <input required type="text" name='gName' onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="text" name='gname' onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label>Relationship</label>
@@ -180,6 +190,10 @@ const Candidate = () => {
                                     <label>Date of Birth</label>
                                     <input required type="date" name="dob" onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
+                            </div>
+                            <div className="form-group">
+                                <label>Upload Candidate's image</label>
+                                <input required type="file" name="cdimage" onChange={(e) => fileData(e)} className="form-control" />
                             </div>
                             <div className="form-group">
                                 <label>Address</label>
@@ -233,7 +247,7 @@ const Candidate = () => {
                             </div>
                             <div className="form-row justify-content-center">
                                 <div className="form-group col-3">
-                                {/* <button type="submit" onClick={addUserDetails} className="form-control btn btn-primary">Add Candidate</button> */}
+                                    {/* <button type="submit" onClick={addUserDetails} className="form-control btn btn-primary">Add Candidate</button> */}
 
                                     <input type="button" onClick={addUserDetails} className="form-control btn btn-primary" value="Add Candidate"></input>
                                 </div>

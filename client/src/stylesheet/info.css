@@ -52,7 +52,7 @@
 }
 div.card .read{
     color:blue;
-    text-decoration: none;
+    text-decoration: ;
 }
 @media only screen and (max-width:790px) and (min-width:580px){
     div.image{

@@ -52,7 +52,7 @@ const Poll = () => {
             partyIndex: '/img/congress.jpg'
         },
     ]
-    const item = data;
+    // const item = data;
     // Data fetching of candidates
     const [candidate, setCandidate] = useState([])
     useEffect(() => {
@@ -61,6 +61,8 @@ const Poll = () => {
     const getAllCandidates = async () => {
         let response = await getCandidate();
         setCandidate(response.data)
+        
+        // console.log(candidate)
     }
     // console.log(candidate)
 
@@ -138,7 +140,7 @@ const Poll = () => {
                                     </div>
                                     <div>
                                         <button onClick={onOpen}>
-                                            <img src={cand.cdnum} alt="party-logo" />
+                                            <img src={`http://localhost:8000/uploads/${cand.cdimage}`} alt="party-logo"  width="50px" height='50px' />
                                         </button>
                                     </div>
 
@@ -155,7 +157,7 @@ const Poll = () => {
 
 
             {/* FOOTER IS HERE */}
-            <div className="container-fluid bg-primary">
+            <div className="container-fluid fixed-bottom bg-primary">
                 <div className="row">
                     <div className="col-12 p-0">
                         <Footer3 />

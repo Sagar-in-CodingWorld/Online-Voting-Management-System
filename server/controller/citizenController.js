@@ -36,4 +36,4 @@ export const getCandidate = async (request, response)=> {
     response.status(404).json({message: err.message})
   }
 }
-
+ 
