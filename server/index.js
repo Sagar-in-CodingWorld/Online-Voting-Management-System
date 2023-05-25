@@ -14,9 +14,10 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 const PORT = 8000;
 app.use('/', Routes);
-
-const username = process.env.DB_USERNAME;
+app.use('/uploads',express.static('uploads'))
+ 
+const username = process.env.DB_USERNAME; 
 const password = process.env.DB_PASSWORD;
 Connection(username,password);
 
-app.listen(PORT,()=> console.log(`Server listening to port number ${PORT}`)); 
+app.listen(PORT,()=> console.log(`Server listening to port number ${PORT}`));

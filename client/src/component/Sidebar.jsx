@@ -72,7 +72,7 @@ export const Sidebar = () => {
                 <NavLink to='/voterlist' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-bars" style={{ color: 'purple' }}></i>Voter List<i id="drop1" className="fas fa-angle-right"></i></NavLink>
                 <NavLink to='/candidate' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-users" style={{ color: 'orange' }}></i>Add Candidate<i id='drop' className='fas fa-angle-right'></i></NavLink>
                 <NavLink to='/Userinfo' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-user" style={{ color: 'lightgreen' }}></i>User info<i id='drop' className='fas fa-angle-right'></i></NavLink>
-                <NavLink to='/Status' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-square-poll-vertical" style={{ color: 'red' }}></i>Status<i id='drop' className='fas fa-angle-right'></i></NavLink>
+                <NavLink to='/view-candidate-details' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-square-poll-vertical" style={{ color: 'red' }}></i>View Candidates<i id='drop' className='fas fa-angle-right'></i></NavLink>
                 {/* <div id="submenu1">
                   <NavLink to='' className='nav1'><i className='far fa-circle'></i>Pending Verification</NavLink>
                   <NavLink to='' className='nav1'><i clas/*-sName='far fa-circle'></i>Success Verification</NavLink>

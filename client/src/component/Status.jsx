@@ -25,9 +25,9 @@ const Status = () => {
                         <div className="row pt-2">
                             {/* <div className="col-1"></div> */}
                             <div className="col-9 path bg-primar">
-                                <NavLink to="/" id="path" style={{color:'black'}}>Home</NavLink>
-                                <NavLink to="/admin" id="path" style={{color:'black'}}>/Dashboard</NavLink>
-                                <NavLink to='/Status' id='path' style={{color:'black'}}>/Status</NavLink>
+                                <NavLink to="/" id="path" style={{ color: 'black' }}>Home</NavLink>
+                                <NavLink to="/admin" id="path" style={{ color: 'black' }}>/Dashboard</NavLink>
+                                <NavLink to='/Status' id='path' style={{ color: 'black' }}>/Status</NavLink>
                             </div>
                             <div className="col-3 widgets bg-warnin p-2">
                                 <div className="right-top-bar">
@@ -38,7 +38,7 @@ const Status = () => {
                                         <table className='table table-responsive bg-warnin'>
                                             <tr>
                                                 <td><input type="search" name="search" placeholder='Search...' id='search-box' className='form-control' /></td>
-                                                <td><i onClick={expand} id="search-icon" className='fas fa-search' style={{color:'black'}}></i></td>
+                                                <td><i onClick={expand} id="search-icon" className='fas fa-search' style={{ color: 'black' }}></i></td>
                                             </tr>
                                         </table>
                                     </form>
@@ -46,11 +46,6 @@ const Status = () => {
 
 
                             </div>
-
-
-
-
-
 
 
                         </div>
@@ -83,7 +78,7 @@ const Status = () => {
                                 <div className='counts m-2'>100</div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     {/* <div className="col-md-8 col-12 col-lg-8 bg-primary  ">
@@ -92,9 +87,9 @@ const Status = () => {
                 </div>
             </div>
             <div className="row m-0">
-                <div className="col-12 p-0" style={{bottom:"0%"}}>
+                <div className="col-12 p-0" style={{ bottom: "0%" }}>
                     <div >
-                        <Footer3/>
+                        <Footer3 />
                     </div>
                 </div>
             </div>

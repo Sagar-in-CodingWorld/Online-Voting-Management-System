@@ -1,8 +1,12 @@
 import React from 'react';
+// import { useEffect } from 'react';
 import "../CITIZENCSS/Card.css";
 import { NavLink } from "react-router-dom";
-
+ 
 function Card() {
+    
+    // useEffect(() =>{showTime();},[])
+
     return (
         <>
             <div className="container mt-5">
@@ -39,13 +43,13 @@ function Card() {
                 </div>
                 <div className="row d-flex justify-content-around">
                     <div className='col-12 col-lg-4 text-center card-divs d-flex justify-content-center mt-5'>
-                        <video className='video' width="100%" autoPlay controls loop>   
-                            <source src='/video1.mp4' type='video/mp4'></source>
+                        <video className='video' width="100%" autoPlay loop>
+                            <source src='video1.mp4' type='video/mp4'></source>
                         </video>
                     </div>
                     <div className='col-12 col-lg-4 text-center card-divs  d-flex justify-content-center mt-5'>
-                        <video className='video' width="100%" autoPlay controls loop>
-                            <source src='/video2.mp4' type='video/mp4'></source>
+                        <video className='video' width="100%" autoPlay loop>
+                            <source src='video2.mp4' type='video/mp4'></source>
                         </video>
                     </div>
                 </div>

@@ -9,11 +9,20 @@ const addUser = async(data) =>{
     }
 }
 
+export const candidateIndex = async(data)=> {
+  try{
+        return await axios.post(`${URL}/add/candidateIndex`,data);
+  }catch(error){
+        console.log(`Error while calling candidateIndex API`,error);
+  }
+}
+
+
 const candidate = async(data) =>{
     try{
-           return await axios.post(`${URL}/add/candidate`,data);
+          return await axios.post(`${URL}/add/candidate`,data);
     }catch(error){
-      console.log('error while calling API',error);
+          console.log('error while calling API',error);
     }
 }
 
@@ -31,6 +40,14 @@ export const getCandidate = async()=> {
   }
   catch(err){
     console.log('Error while fetching Candidates',err);
+  }
+}
+
+export const deleteCandidate = async(data) =>{
+  try{
+      return await axios.post(`${URL}/deleteCandidate`,data);
+  }catch(error){
+      console.log('Error While Fetching Data', error);
   }
 }
 

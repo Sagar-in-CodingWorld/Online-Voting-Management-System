@@ -10,11 +10,12 @@ const candidateSchema = mongoose.Schema({
     email: String,
     epicNumber: String,
     dob: String,
-    cdimage:String,
     address: String,
     city: String,
     state: String,
-    zip: Number
+    zip: Number,
+    partyName: String,
+    partyIndex: String
 });
 
 const user = mongoose.model('candidate', candidateSchema);

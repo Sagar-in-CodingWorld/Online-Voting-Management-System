@@ -33,7 +33,16 @@ export const getCandidate = async (request, response)=> {
     response.status(200).json(data)
   }
   catch (err){
-    response.status(404).json({message: err.message})
+    response.status(404).json({message: "getCandidate unable to fetch data"})
   }
 }
- 
+
+export const deleteCandidate = async (req, res) => {
+  try {
+      // console.log(req.body)
+      await user.deleteOne({ _id: req.body.id })
+      res.status(201).json('success')
+  } catch (error) {
+      res.status(404).json({ message: error.message });
+  }
+}

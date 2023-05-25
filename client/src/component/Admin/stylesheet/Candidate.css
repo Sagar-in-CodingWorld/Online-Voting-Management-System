@@ -5,3 +5,13 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     /* font-family: "redo"; */
 }
+.action-btn{
+    background-color: #1625cc;
+    padding: 5px 7px;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.action-btn:hover{
+    color: #fff;
+}

@@ -7,7 +7,8 @@ import { NavLink } from 'react-router-dom';
 import { Timer } from "../Timer";
 import { Footer3 } from "../Footer3";
 import { CanceledError } from "axios";
-import { candidate } from "../../service/api";
+import { candidate, candidateIndex } from "../../service/api";
+import axios from "axios"
 
 const Candidate = () => {
 
@@ -15,7 +16,7 @@ const Candidate = () => {
     const [user, setUser] = useState({});
 
     const fileData = (e) => {
-        setUser({ ...user, cdimage: e.target.files[0] })
+        setUser({ ...user, [e.target.name]: e.target.files[0] })
         console.log(user)
     }
     function onValueChange(e) {
@@ -36,8 +37,25 @@ const Candidate = () => {
 
     const addUserDetails = async (e) => {
         e.preventDefault();
+
+        // const FD = new FormData()
+        // FD.append('partyName', user.partyName)
+        // FD.append('partyImage', user.partyImage, user.partyImage.name)
+        // console.log("This is PartyData Data");
+        // console.log(FD);
+        // const response = await candidateIndex(FD);
+        // // alert("Success")
+        // if (response.status === 200) {
+        //     alert("PartyIndex Successfully Added");
+        //     // window.location.reload();
+        // } else { 
+        //     alert("Something went Wrong Try Again");
+        // }
+
+
         const formData = new FormData()
-        formData.append('cdimage', user.cdimage, user.cdimage.name)
+        formData.append('partyIndex', user.partyIndex, user.partyIndex.name)
+        formData.append('partyName', user.partyName)
         formData.append('cdname', user.cdname)
         formData.append('gender', user.gender)
         formData.append('gname', user.gname)
@@ -50,11 +68,12 @@ const Candidate = () => {
         formData.append('city', user.city)
         formData.append('state', user.state)
         formData.append('zip', user.zip)
+        console.log("This is Form Data");
         console.log(formData);
         const res = await candidate(formData);
-        alert("Success")
+        // alert("Success")
         if (res.status === 201) {
-            alert("Doctor Successfully Added");
+            alert("Candidate Successfully Added");
             // window.location.reload();
         } else {
             alert("Something went Wrong Try Again");
@@ -191,10 +210,11 @@ const Candidate = () => {
                                     <input required type="date" name="dob" onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                             </div>
-                            <div className="form-group">
+
+                            {/* <div className="form-group">
                                 <label>Upload Candidate's image</label>
                                 <input required type="file" name="cdimage" onChange={(e) => fileData(e)} className="form-control" />
-                            </div>
+                            </div> */}
                             <div className="form-group">
                                 <label>Address</label>
                                 <input required type="text" name="address" onChange={(e) => onValueChange(e)} className="form-control" placeholder=" i.g. 1234 Main Street" />
@@ -242,9 +262,29 @@ const Candidate = () => {
                                 </div>
                                 <div className="form-group col-md-2">
                                     <label for="inputZip">Zip</label>
-                                    <input required type="number" name="zip" onChange={(e) => onValueChange(e)} className="form-control" id="inputZip" />
+                                    <input required type="number" name="zip" onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                             </div>
+                            <div className="form-row">
+                                <div className="form-group col-sm-6">
+                                    <label>Party Name</label>
+                                    <input required type="text" name="partyName" onChange={(e) => onValueChange(e)} className="form-control" />
+                                </div>
+                                <div className="form-group col-sm-6">
+                                    <label>Upload Party-index image</label>
+                                    <input required type="file" name="partyIndex" onChange={(e) => fileData(e)} className="form-control" />
+                                </div>
+                            </div>
+                            {/* <div className="form-row">
+                                <div className="form-group col-sm-6">
+                                    <label>Party Name</label>
+                                    <input required type="text" name="partyName" onChange={(e) => onValueChange(e)} className="form-control"/>
+                                </div>
+                                <div className="form-group col-sm-6">
+                                    <label>Party Index</label>
+                                    <input required type="file" name="partyImage" onChange={(e) => fileData(e)} className="form-control" />
+                                </div>
+                            </div> */}
                             <div className="form-row justify-content-center">
                                 <div className="form-group col-3">
                                     {/* <button type="submit" onClick={addUserDetails} className="form-control btn btn-primary">Add Candidate</button> */}

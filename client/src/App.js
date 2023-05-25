@@ -33,6 +33,7 @@ import Poll from './CITIZEN/Poll'
 import Trackform from './component/Trackform'
 import DownloadCard from './CITIZEN/DownloadCard'
 import Candidate from './component/Admin/Candidate'
+import CandidateView from './component/Admin/CandidateView'
 
 function App() {
   return (
@@ -78,7 +79,7 @@ function App() {
             {/* <Route exact path='/Election' element={<Election />}></Route> */}
             <Route exact path='/Userinfo' element={<Userinfo />}></Route>
             <Route exact path='/Voterlist' element={<Voterlist />}></Route>
-            <Route exact path='/Status' element={<Status />}></Route>
+            <Route exact path='/view-candidate-details' element={<CandidateView />}></Route>
             
           </Routes>
         </BrowserRouter>
