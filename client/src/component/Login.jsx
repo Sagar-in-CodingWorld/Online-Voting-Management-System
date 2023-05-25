@@ -39,7 +39,7 @@ const Login = () => {
               <div className="login-main ">
                 <h1>Login</h1>
                 <form>
-                  <input type="text" autoFocus onChange={(e) => setUserId(e.target.value)} placeholder='username/mobile no.' name="username" className='form-control mt-5' />
+                  <input type="text" autoFocus onChange={(e) => setUserId(e.target.value)} placeholder='@username' name="username" className='form-control mt-5' />
 
                   <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder='Password' name="password" className='form-control mt-2 pass' />
                   <div className="row ">
@@ -49,7 +49,7 @@ const Login = () => {
                       <input type="reset" className='btnn btn-outline-danger' />
 
                     </div>
-
+ 
                   </div>
 
                 </form><br />

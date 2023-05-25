@@ -103,9 +103,12 @@ const CandidateView = () => {
 
                                                         </td>
                                                         <td>
-                                                            <NavLink to='' className="action-btn"><i className="fas fa-edit"></i></NavLink>
+                                                            {/* <NavLink to='' className="action-btn"><i className="fas fa-edit"></i></NavLink> */}
+                                                            <NavLink to="" onClick={() => { deleteButton(`${cd._id}`) }} className="action-btn" style={{ backgroundColor: '#D2001A', padding: '5px 9px' }}><i className="fas fa-trash"></i></NavLink>
+                                                            <NavLink to="" className="action-btn ml-3" style={{ backgroundColor: '#F94892' }}><i className="fas fa-eye"></i></NavLink>
+                                                            {/* <NavLink to='' className="action-btn"><i className="fas fa-edit"></i></NavLink>
                                                             <NavLink to="" className="action-btn ml-2" style={{ backgroundColor: '#F94892' }}><i className="fas fa-eye"></i></NavLink>
-                                                            <NavLink to="" onClick={() => { deleteButton(`${cd._id}`) }} className="action-btn mt-4" style={{ backgroundColor: '#D2001A', padding: '5px 9px',position : 'absolute',zIndex: "1",marginLeft: '-55px' }}><i className="fas fa-trash"></i></NavLink>
+                                                            <NavLink to="" onClick={() => { deleteButton(`${cd._id}`) }} className="action-btn mt-4" style={{ backgroundColor: '#D2001A', padding: '5px 9px',position : 'absolute',zIndex: "1",marginLeft: '-55px' }}><i className="fas fa-trash"></i></NavLink> */}
                                                         </td>
 
                                                     </tr>
@@ -116,15 +119,11 @@ const CandidateView = () => {
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
-
-
-
                 </div>
             </div>
             <div className="row m-0">
-                <div className="col-12 p-0 mt-5" style={{ bottom: "0%" }}>
+                <div className="col-12 p-0 mt-5" style={{ bottom: "-50%",position: 'absolute' }}>
                     <div >
                         <Footer3 />
                     </div>

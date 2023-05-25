@@ -20,4 +20,4 @@ const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 Connection(username,password);
 
-app.listen(PORT,()=> console.log(`Server listening to port number ${PORT}`));
+app.listen(PORT,()=> console.log(`Server listening to port number ${PORT}`)); 

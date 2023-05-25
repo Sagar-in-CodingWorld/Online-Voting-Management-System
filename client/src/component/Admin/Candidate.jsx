@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-// import '../stylesheet/Admin.css';
-// import ".../stylesheet/Admin.css";
 import "./stylesheet/Candidate.css";
 import { Sidebar } from '../Sidebar';
 import { NavLink } from 'react-router-dom';
@@ -34,25 +32,68 @@ const Candidate = () => {
     //     const cdNameIs = fullName.cdFName + " " + fullName.cdLName;
     //     setUser({ ...user, cdName: cdNameIs })
     // }, [user])
+    const inputRef = useRef(null);
+    const inputRef1 = useRef(null);
+    const inputRef2 = useRef(null);
+    const inputRef3 = useRef(null);
+    const inputRef4 = useRef(null);
+    const inputRef5 = useRef(null);
+    const inputRef6 = useRef(null);
+    const inputRef7 = useRef(null);
+    const inputRef8 = useRef(null);
+    const inputRef9 = useRef(null);
+    const inputRef10 = useRef(null);
+    const inputRef11 = useRef(null);
+    const inputRef12 = useRef(null);
+    const inputRef13 = useRef(null);
 
     const addUserDetails = async (e) => {
         e.preventDefault();
+        const { cdname,gender,gname,relation,mobile,email,epicNumber,dob,address,city,state,zip,partyName,partyIndex} = user
 
-        // const FD = new FormData()
-        // FD.append('partyName', user.partyName)
-        // FD.append('partyImage', user.partyImage, user.partyImage.name)
-        // console.log("This is PartyData Data");
-        // console.log(FD);
-        // const response = await candidateIndex(FD);
-        // // alert("Success")
-        // if (response.status === 200) {
-        //     alert("PartyIndex Successfully Added");
-        //     // window.location.reload();
-        // } else { 
-        //     alert("Something went Wrong Try Again");
-        // }
-
-
+        if (!cdname) {
+            alert("Enter Candidate Name !");
+            inputRef.current.focus();
+        } else if (!gender) {
+            alert("Enter gender !");
+            inputRef1.current.focus();
+        } else if (!gname) {
+            alert("Enter Guardian name !");
+            inputRef2.current.focus();
+        } else if (!relation) {
+            alert("Enter relation");
+            inputRef3.current.focus();
+        } else if (!mobile) {
+            alert("Enter Mobile Number");
+            inputRef4.current.focus();
+        } else if (!epicNumber) {
+            alert("Enter Epic Number !");
+            inputRef5.current.focus();
+        } else if (!email) {
+            alert("Enter email !");
+            inputRef6.current.focus();
+        } else if (!dob) {
+            alert("Enter dob!");
+            inputRef7.current.focus();
+        } else if (!address) {
+            alert("Enter address!");
+            inputRef8.current.focus();
+        } else if (!city) {
+            alert("Enter city!");
+            inputRef9.current.focus();
+        } else if (!state) {
+            alert("Enter state!");
+            inputRef10.current.focus();
+        } else if (!zip) {
+            alert("Enter zip!");
+            inputRef11.current.focus();
+        } else if (!partyName) {
+            alert("Enter partyname!");
+            inputRef12.current.focus();
+        } else if (!partyIndex) {
+            alert("Enter partyindex!");
+            inputRef13.current.focus();
+        } else {
         const formData = new FormData()
         formData.append('partyIndex', user.partyIndex, user.partyIndex.name)
         formData.append('partyName', user.partyName)
@@ -79,6 +120,7 @@ const Candidate = () => {
             alert("Something went Wrong Try Again");
         }
     }
+}
 
 
 
@@ -161,11 +203,11 @@ const Candidate = () => {
                             <div className="form-row">
                                 <div className="form-group col-sm-6">
                                     <label>Full Name</label>
-                                    <input autoFocus required type="text" name='cdname' onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input autoFocus required type="text" ref={inputRef} name='cdname' onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label >Gender</label>
-                                    <select required name="gender" onChange={(e) => onValueChange(e)} className="form-control">
+                                    <select required name="gender" ref={inputRef1} onChange={(e) => onValueChange(e)} className="form-control">
                                         <option hidden selected value="">Choose...</option>
                                         <option value="Female">Female</option>
                                         <option value="Male">Male</option>
@@ -176,11 +218,11 @@ const Candidate = () => {
                             <div className="form-row">
                                 <div className="form-group col-sm-6">
                                     <label >Guardian Name</label>
-                                    <input required type="text" name='gname' onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="text" name='gname' ref={inputRef2} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label>Relationship</label>
-                                    <select required name='relation' onChange={(e) => onValueChange(e)} className="form-control">
+                                    <select required name='relation' ref={inputRef3} onChange={(e) => onValueChange(e)} className="form-control">
                                         <option selected hidden>Choose...</option>
                                         <option value="Father">Father</option>
                                         <option value="Mother">Mother</option>
@@ -193,21 +235,21 @@ const Candidate = () => {
                             <div className="form-row">
                                 <div className="form-group col-sm-6">
                                     <label>Mobile Number</label>
-                                    <input required type="number" name="mobile" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="number" name="mobile" ref={inputRef4}  onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label>Email Id</label>
-                                    <input required type="email" name="email" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="email" name="email" ref={inputRef6} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-sm-6">
                                     <label>Epic Number</label>
-                                    <input required type="text" name="epicNumber" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="text" name="epicNumber" ref={inputRef5} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label>Date of Birth</label>
-                                    <input required type="date" name="dob" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="date" name="dob" ref={inputRef7} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                             </div>
 
@@ -217,17 +259,17 @@ const Candidate = () => {
                             </div> */}
                             <div className="form-group">
                                 <label>Address</label>
-                                <input required type="text" name="address" onChange={(e) => onValueChange(e)} className="form-control" placeholder=" i.g. 1234 Main Street" />
+                                <input required type="text" name="address" ref={inputRef8} onChange={(e) => onValueChange(e)} className="form-control" placeholder=" i.g. 1234 Main Street" />
                             </div>
 
                             <div className="form-row">
                                 <div className="form-group col-md-6">
                                     <label >City</label>
-                                    <input required type="text" name="city" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="text" name="city" ref={inputRef9} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-md-4">
                                     <label >State</label>
-                                    <select required name="state" onChange={(e) => onValueChange(e)} className="form-control">
+                                    <select required name="state" ref={inputRef10} onChange={(e) => onValueChange(e)} className="form-control">
                                         <option selected disabled>Choose...</option>
                                         <option value="Assam">Assam</option>
                                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -262,17 +304,17 @@ const Candidate = () => {
                                 </div>
                                 <div className="form-group col-md-2">
                                     <label for="inputZip">Zip</label>
-                                    <input required type="number" name="zip" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="number" name="zip" ref={inputRef11} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-sm-6">
                                     <label>Party Name</label>
-                                    <input required type="text" name="partyName" onChange={(e) => onValueChange(e)} className="form-control" />
+                                    <input required type="text" name="partyName" ref={inputRef12} onChange={(e) => onValueChange(e)} className="form-control" />
                                 </div>
                                 <div className="form-group col-sm-6">
                                     <label>Upload Party-index image</label>
-                                    <input required type="file" name="partyIndex" onChange={(e) => fileData(e)} className="form-control" />
+                                    <input required type="file" name="partyIndex" ref={inputRef13} onChange={(e) => fileData(e)} className="form-control" />
                                 </div>
                             </div>
                             {/* <div className="form-row">
@@ -295,124 +337,11 @@ const Candidate = () => {
                                     <button type="reset" className="form-control btn btn-danger">Reset</button>
                                 </div>
                             </div>
-                            <div className="form-group">
-                                {/* <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label className="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div> */}
-                            </div>
+
                         </form>
                     </div>
 
 
-
-
-
-
-
-
-
-                    {/* <div className="col-12 col-md-9 col-lg-9 col-sm-4 antu">
-
-                        <div className="body" id="cd-form-area">
-                            <form>
-                                <div className="container-fluid">
-                                    <div className="row">
-                                        <div className="col-12">
-                                            <div className="cd-form">
-                                                <h4 className="text-center pt-2">Add Candidate</h4><hr></hr>
-
-                                                <div className="row form-area">
-                                                    <div className="col-12 col-md-4">
-                                                        <table className="table table-responsive">
-                                                            <tr>
-                                                                <td>Name <span style={{ color: 'red' }}>*</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type='text' name="cdname" ref={inputRef} className="form-control" placeholder="Enter Your Name" onChange={(e) => onvaluechange(e)}></input></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <div className="col-12 col-md-4">
-                                                        <table className="table table-responsive">
-                                                            <tr>
-                                                                <td>Mobile Number <span style={{ color: 'red' }}>*</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type='number' name="cdnum" ref={inputRef1} className="form-control" placeholder="Enter Mobile Number" onChange={(e) => onvaluechange(e)}></input></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <div className="col-12 col-md-4">
-                                                        <table className="table table-responsive">
-                                                            <tr>
-                                                                <td>Email Id <span style={{ color: 'red' }}>*</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type='email' name="mail" ref={inputRef2} className="form-control" placeholder="Enter Your Email Id" onChange={(e) => onvaluechange(e)}></input></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div className="row form-area">
-                                                    <div className="col-12 col-md-4">
-                                                        <table className="table table-responsive">
-                                                            <tr>
-                                                                <td>District <span style={{ color: 'red' }}>*</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type='text' name="cddis" ref={inputRef3} className="form-control" placeholder="Enter District" onChange={(e) => onvaluechange(e)}></input></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <div className="col-12 col-md-4">
-                                                        <table className="table table-responsive">
-                                                            <tr>
-                                                                <td>Legislative Assembly <span style={{ color: 'red' }}>*</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type='text' name="cdla" ref={inputRef4} className="form-control" placeholder="Enter Legislative Assembly" onChange={(e) => onvaluechange(e)}></input></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <div className="col-12 col-md-4">
-                                                        <table className="table table-responsive">
-                                                            <tr>
-                                                                <td>Party Name<span style={{ color: 'red' }}>*</span></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type='text' name="party" ref={inputRef5} className="form-control" placeholder="Enter party name" onChange={(e) => onvaluechange(e)}></input></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
-
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <div className="btn-submit">
-                                                            <table>
-                                                                <tr>
-                                                                    <td>
-                                                                        <button type="reset" name="ok" className="btn btn-outline-danger">Reset</button>
-                                                                        <NavLink to='' onClick={(e) => addUserDetails(e)}><button type="submit" name="ok" className="btn btn-outline-primary ml-2">Submit</button></NavLink>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div> */}
-                    {/* <div className="col-md-8 col-12 col-lg-8 bg-primary  ">
-                    gggg 
-                </div> */}
                 </div>
             </div>
             <div className="row m-0">

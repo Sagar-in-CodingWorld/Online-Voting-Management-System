@@ -49,7 +49,7 @@ export const Sidebar = () => {
               {/* <i id='drop11' className="fa-solid fa-angles-right bg-dark"></i> */}
             </div>
             <div id="log-out">
-              <NavLink to='/citizen' className="bg-secondar px-4" id='logout'><i className="fa-solid fa-right-from-bracket fa-rotate-180 ml- my-2"></i><span className='ml-2'>Log out</span></NavLink>
+              <NavLink to='/' className="bg-secondar px-4" id='logout'><i className="fa-solid fa-right-from-bracket fa-rotate-180 ml- my-2"></i><span className='ml-2'>Log out</span></NavLink>
             </div>
 
             <div id="sidebar-bottom">
@@ -71,7 +71,7 @@ export const Sidebar = () => {
                 <NavLink to='' className='nav' style={{color:'black'}}><i className='fas fa-circle' style={{ color: '' }}></i>Candidates<i id='drop' className='fas fa-angle-right'></i></NavLink> */}
                 <NavLink to='/voterlist' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-bars" style={{ color: 'purple' }}></i>Voter List<i id="drop1" className="fas fa-angle-right"></i></NavLink>
                 <NavLink to='/candidate' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-users" style={{ color: 'orange' }}></i>Add Candidate<i id='drop' className='fas fa-angle-right'></i></NavLink>
-                <NavLink to='/Userinfo' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-user" style={{ color: 'lightgreen' }}></i>User info<i id='drop' className='fas fa-angle-right'></i></NavLink>
+                <NavLink to='/Userinfo' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-user" style={{ color: 'lightgreen' }}></i>Citizen info<i id='drop' className='fas fa-angle-right'></i></NavLink>
                 <NavLink to='/view-candidate-details' className='nav' style={{ color: 'black' }}><i className="fa-solid fa-square-poll-vertical" style={{ color: 'red' }}></i>View Candidates<i id='drop' className='fas fa-angle-right'></i></NavLink>
                 {/* <div id="submenu1">
                   <NavLink to='' className='nav1'><i className='far fa-circle'></i>Pending Verification</NavLink>
